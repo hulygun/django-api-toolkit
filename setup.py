@@ -8,7 +8,7 @@ setup(
     version=api_tools.__version__,
     author=api_tools.__author__,
     author_email=api_tools.__author_email__,
-    url='https://github.com/hulygun/django-api-tools',
+    url='https://github.com/hulygun/django-api-toolkit',
     packages=find_packages(),
     long_description=open(join(dirname(__file__), 'README.rst')).read(),
     entry_points={
