@@ -52,10 +52,10 @@ Structure
 Settings
 ~~~~~~~~
 
-**COMMON_APPS** - django common applications
-**THIRD_PARTY_APPS** - third party applications
-**EXTRA_APPS** - applications should be insted before common apps
-**PROJECT_APPS** - your project applications
+- **COMMON_APPS** - django common applications
+- **THIRD_PARTY_APPS** - third party applications
+- **EXTRA_APPS** - applications should be insted before common apps
+- **PROJECT_APPS** - your project applications
 
 You also can overwrite other standard django settings keys and add yourself variables
 
