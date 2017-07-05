@@ -13,7 +13,10 @@ setup(
     long_description=open(join(dirname(__file__), 'README.rst')).read(),
     entry_points={
         'console_scripts':
-            ['project_init = api_tools.scripts:project_init']
+            [
+                'project_init = api_tools.scripts:project_init',
+                'env_generator = api_tools.scripts:env_generator'
+            ]
     },
     install_requires=[r for r in open(join(dirname(__file__), 'api_tools', 'requirements.txt')).readlines()],
     test_suite='tests',
