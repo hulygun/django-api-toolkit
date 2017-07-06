@@ -2,7 +2,13 @@ language: python
 python:
   - '3.5'
   - '3.6'
-script: python setup.py test
+install:
+  - pip install coveralls
+
+script:
+  coverage run --source=django-api-toolkit setup.py test
+after_success:
+  coveralls
 
 deploy:
   provider: pypi
