@@ -5,9 +5,22 @@ Very simple app for REST API create via Django Framework
     :alt: Build Status
     :target: https://travis-ci.org/hulygun/django-api-toolkit
 
-.. image:: https://badge.fury.io/py/django-api-toolkit.svg
-    :alt: PYPI
-    :target: https://badge.fury.io/py/django-api-toolkit
+.. image:: https://img.shields.io/pypi/v/django-api-toolkit.svg
+    :alt: pypi
+    :target: https://pypi.org/project/django-api-toolkit/
+
+.. image:: https://img.shields.io/pypi/pyversions/django-api-toolkit.svg
+    :alt: python
+    :target: https://pypi.org/project/django-api-toolkit/
+
+.. image:: https://img.shields.io/pypi/l/django-api-toolkit.svg
+    :alt: license
+    :target: https://pypi.org/project/django-api-toolkit/
+
+.. image:: https://img.shields.io/pypi/status/django-api-toolkit.svg
+    :alt: Development status
+    :target: https://pypi.org/project/django-api-toolkit/
+
 
 .. contents::
 
