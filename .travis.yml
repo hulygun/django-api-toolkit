@@ -6,7 +6,7 @@ install:
   - pip install coveralls
 
 script:
-  coverage run --source=hulygun/django-api-toolkit setup.py test
+  coverage run --source=api_tools setup.py test
 after_success:
   coveralls
 
