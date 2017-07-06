@@ -21,6 +21,10 @@ Very simple app for REST API create via Django Framework
     :alt: Development status
     :target: https://pypi.org/project/django-api-toolkit/
 
+.. image:: https://coveralls.io/repos/github/hulygun/django-api-toolkit/badge.svg?branch=master
+    :target: https://coveralls.io/github/hulygun/django-api-toolkit?branch=master
+
+
 
 .. contents::
 
