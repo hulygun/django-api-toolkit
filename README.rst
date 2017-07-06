@@ -1,6 +1,14 @@
 Very simple app for REST API create via Django Framework
 ========================================================
 
+.. image:: https://travis-ci.org/hulygun/django-api-toolkit.svg?branch=master
+    :alt: Build Status
+    :target: https://travis-ci.org/hulygun/django-api-toolkit
+
+.. image:: https://badge.fury.io/py/django-api-toolkit.svg
+    :alt: PYPI
+    :target: https://badge.fury.io/py/django-api-toolkit
+
 .. contents::
 
 Instalation

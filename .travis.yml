@@ -3,3 +3,11 @@ python:
   - '3.5'
   - '3.6'
 script: python setup.py test
+
+deploy:
+  provider: pypi
+  user: "hulygun"
+  password:
+    secure: "qo7LOCpCda6zmWOz8oiBxyw0y85pzEx6Y498XgB4wZGpzKG5pn35bSHdPmK3jsGCElbtyPlJH61Bn0Za+1jilYYfm2BE45jAC8gRX272o6CaptXAz7Sbb6CwwRQ/U3hqXRvlnoHP37M6vIfDZ0hIkiEQipCcg2NhN2vraAOtrwUd5us9mUITozBvYJiNQtkDRCBfzPm9Ghv6CBFle0DkitOf0Y3+ArwKOyx7mbKyG8VxFF7/IdJHPKPbE2oZFMSzvBeuXwHr6gYTbY2kEebDjP7fLe865UCgjf5KdEtaLYoO1ThJZqDULsr6+MQIWn+z3/MuzlKcYaI2LGXJ6/f+CIdA6j/0Cs+bcOjIW52350RrlYiEFGlTMipCPczO+1NNfXlEZxD16NDU/wgDyFOdXHWK8YOuCOAnyugEgDmsXi90HJ3CTiI9LnCyQBVqaMP2KMtkNSr9uq85c4bzFh56V94M3e5BRDlfTfxFWF617nWVkzzXS/HRAk4kCVPxhGUEGCxFZFt2dDcoJoddqE3CK+XStHQoSGHuq7SYBAdnUa55PQAHSs6PQGpEZf9B+SkDqh/VyL3QPY5gBiEfU6rG5AIHx+IHiwdRZ/D0xotYMBO/nGzdRwbEMLEbNx56XPDUulVlb7pycuUAa+e0T0CrTm2ixoR0kqbV7Eo6oXeyiIE="
+  on:
+    branch: master
