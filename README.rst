@@ -1,25 +1,33 @@
 Very simple app for REST API create via Django Framework
 ========================================================
 
+.. contents::
+
 Instalation
 -----------
-::
+.. code-block:: bash
 
   pip install django-api-toolkit
 
 Get started
 -----------
 
-In the first you need initialize your project::
+In the first you need initialize your project
+
+.. code-block:: bash
 
   project_init <path to project>
 
-For existing projects you should to generate **env** file::
+For existing projects you should to generate **env** file
+
+.. code-block:: bash
 
   env_generator <path to project>
 
 This script generate base variables that needed to run project. You can also add youself variables in env file
-You should also change your **manage.py**. Add *APIManager* to your file. e.q. ::
+You should also change your **manage.py**. Add *APIManager* to your file. e.q.
+
+.. code-block:: python
 
   #!/usr/bin/env python
   import sys
@@ -40,7 +48,8 @@ Usage
 
 Structure
 ~~~~~~~~~
-::
+
+.. code-block:: bash
 
   ├── apps  # dir for your apps
   ├── cfg  # dir for diferent project configurations
@@ -62,4 +71,51 @@ You also can overwrite other standard django settings keys and add yourself vari
 Models
 ~~~~~~
 
+All project models should be inherited of RestModel(this standart django abstract model and you can use all capabilities
+of this)
 
+.. code-block:: python
+
+  from api_tools.models import RestModel
+
+  class MyModel(RestModel):
+      ...
+
+Advanced
+--------
+
+**RestModel** have subclass **Rest**. This subclass have properties for control your rest models. RestModel also have
+classmethods for these controls.
+
+
+RestModel overwrites
+~~~~~~~~~~~~~~~~~~~~
+
+RestModel.Rest
+..............
+
+:queryset: defines queryset as **lambda** of :code:`model.objects`
+:fields: list of allowed fields of model
+:name: name of viewset
+:route: route of endpoint
+
+RestModel._rest_serializer
+..........................
+
+Defines serializer for viewset of model
+
+RestModel._rest_queryset
+........................
+
+Defines queryset for viewset
+
+RestModel._rest_endpoint
+........................
+
+Set endpoint for your model
+
+FEATURES
+--------
+
+CHANGELOG
+---------

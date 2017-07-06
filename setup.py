@@ -3,6 +3,8 @@ from os.path import join, dirname
 
 import api_tools
 
+__author__ = 'hulygun'
+
 setup(
     name='django-api-toolkit',
     version=api_tools.__version__,
