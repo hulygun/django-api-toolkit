@@ -1,5 +1,5 @@
 Django==1.11.28
-djangorestframework==3.6.3
+djangorestframework==3.9.1
 djangorestframework-jsonapi==2.2.0
 djangorestframework-jwt==1.11.0
 django-debug-toolbar==1.8
