@@ -1,4 +1,4 @@
-Django==1.11.23
+Django==1.11.28
 djangorestframework==3.6.3
 djangorestframework-jsonapi==2.2.0
 djangorestframework-jwt==1.11.0
